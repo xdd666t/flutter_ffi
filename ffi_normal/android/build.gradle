@@ -43,4 +43,12 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+
+
+    //配置CMakeList路径
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
 }

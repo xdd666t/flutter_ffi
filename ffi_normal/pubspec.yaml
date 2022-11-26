@@ -13,6 +13,21 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  ffigen: ^7.2.0
+
+#
+ffigen:
+  # 输出生成的文件路径
+  output: 'lib/src/ffigen/two_num_add.dart'
+  # 输出的类名
+  name: NativeLibrary
+  headers:
+    # 配置需要生成的文件
+    entry-points:
+      - 'ios/Classes/native/ffigen/add.cpp'
+    # 保证只转换two_num_add.cpp文件, 不转换其包含的库文件
+    include-directives:
+      - 'ios/Classes/native/ffigen/add.cpp'
 
 dev_dependencies:
   flutter_test:

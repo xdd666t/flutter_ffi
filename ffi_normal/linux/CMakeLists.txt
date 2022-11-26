@@ -45,3 +45,6 @@ set(ffi_normal_bundled_libraries
   ""
   PARENT_SCOPE
 )
+
+# -------------------------统一CMakeList.txt文件-------------------------
+add_subdirectory("../lib/native" native)
