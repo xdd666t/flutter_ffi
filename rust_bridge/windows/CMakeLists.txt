@@ -56,6 +56,8 @@ add_subdirectory("runner")
 # them to the application.
 include(flutter/generated_plugins.cmake)
 
+# Installing Rust crates
+include(./rust.cmake)
 
 # === Installation ===
 # Support files are copied into place next to the executable, so that it can

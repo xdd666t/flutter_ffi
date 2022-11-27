@@ -1,8 +1,14 @@
 [package]
-name = "rust"
+name = "rust_ffi"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rust_ffi"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+flutter_rust_bridge_codegen = "1.50.0"
 
 [dependencies]
+flutter_rust_bridge = "1.50.0"
