@@ -13,7 +13,7 @@ class NativeFFI {
     if (Platform.isIOS) {
       _dyLib = DynamicLibrary.process();
     } else if (Platform.isMacOS) {
-      DynamicLibrary.executable();
+      _dyLib = DynamicLibrary.executable();
     } else if (Platform.isAndroid) {
       _dyLib = DynamicLibrary.open('lib$base.so');
     } else if (Platform.isWindows) {

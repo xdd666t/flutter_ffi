@@ -5,7 +5,7 @@ edition = "2021"
 
 [lib]
 name = "rust_ffi"
-crate-type = ["cdylib"]
+crate-type = ["staticlib", "cdylib"]
 
 [build-dependencies]
 flutter_rust_bridge_codegen = "1.50.0"
