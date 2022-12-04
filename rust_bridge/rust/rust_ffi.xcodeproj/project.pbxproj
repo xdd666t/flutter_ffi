@@ -8,17 +8,17 @@
     objects = {
 /* Begin PBXBuildFile section */
         
-                CA60D879F126D3186D3DD98A /* Cargo.toml in Sources */ = {
+                CA60F3006BE42F0E6D680B1A /* Cargo.toml in Sources */ = {
                     isa = PBXBuildFile;
-                    fileRef = CA603D5D653C3EF4668187A5 /* Cargo.toml */;
+                    fileRef = CA60EF239FCB3EF4668187A5 /* Cargo.toml */;
                     settings = {
                         COMPILER_FLAGS = "--lib"; /* == OTHER_INPUT_FILE_FLAGS */
                     };
                 };
                 
-                CA60D879F1262FDA1BD5E8EA /* Cargo.toml in Sources */ = {
+                CA60F3006BE42D6C0B81A4BB /* Cargo.toml in Sources */ = {
                     isa = PBXBuildFile;
-                    fileRef = CA603D5D653C3EF4668187A5 /* Cargo.toml */;
+                    fileRef = CA60EF239FCB3EF4668187A5 /* Cargo.toml */;
                     settings = {
                         COMPILER_FLAGS = "--lib"; /* == OTHER_INPUT_FILE_FLAGS */
                     };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-        CA603D5D653CAC6C1400ACA8 /* PBXBuildRule */ = {
+        CA60EF239FCBAC6C1400ACA8 /* PBXBuildRule */ = {
             isa = PBXBuildRule;
             compilerSpec = com.apple.compilers.proxy.script;
             dependencyFile = "$(DERIVED_FILE_DIR)/$(CARGO_XCODE_TARGET_ARCH)-$(EXECUTABLE_NAME).d";
@@ -45,21 +45,21 @@
 
 /* Begin PBXFileReference section */
         
-        CA6097D63F661E25D81AB079 /* staticlib */ = {
+        CA6030FE1F5C1E25D81AB079 /* staticlib */ = {
             isa = PBXFileReference;
             explicitFileType = "archive.ar";
             includeInIndex = 0;
             name = "librust_ffi_static.a";
             sourceTree = TARGET_BUILD_DIR;
         };
-        CA600EC5931CF72F60515920 /* cdylib */ = {
+        CA6032AF8ADEF72F60515920 /* cdylib */ = {
             isa = PBXFileReference;
             explicitFileType = "compiled.mach-o.dylib";
             includeInIndex = 0;
             name = "rust_ffi.dylib";
             sourceTree = TARGET_BUILD_DIR;
         };
-                CA603D5D653C3EF4668187A5 /* Cargo.toml */ = {
+                CA60EF239FCB3EF4668187A5 /* Cargo.toml */ = {
                     isa = PBXFileReference;
                     lastKnownFileType = text;
                     fileEncoding = 4;
@@ -76,7 +76,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-        CA603D5D653C98AF0B5890DB /* Frameworks */ = {
+        CA60EF239FCB98AF0B5890DB /* Frameworks */ = {
             isa = PBXGroup;
             children = (
                 ADDEDBA66A6E2,
@@ -96,23 +96,23 @@
                     sourceTree = "<group>";
                 };
 
-        CA603D5D653C22869D176AE5 /* Products */ = {
+        CA60EF239FCB22869D176AE5 /* Products */ = {
             isa = PBXGroup;
             children = (
-                CA6097D63F661E25D81AB079,
-CA600EC5931CF72F60515920,
+                CA6030FE1F5C1E25D81AB079,
+CA6032AF8ADEF72F60515920,
 
             );
             name = Products;
             sourceTree = "<group>";
         };
 
-        CA603D5D653CD65BC3C892A8 /* Main */ = {
+        CA60EF239FCBD65BC3C892A8 /* Main */ = {
             isa = PBXGroup;
             children = (
-                CA603D5D653C3EF4668187A5,
-CA603D5D653C22869D176AE5,
-CA603D5D653C98AF0B5890DB,
+                CA60EF239FCB3EF4668187A5,
+CA60EF239FCB22869D176AE5,
+CA60EF239FCB98AF0B5890DB,
 
             );
             sourceTree = "<group>";
@@ -121,62 +121,62 @@ CA603D5D653C98AF0B5890DB,
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        CA6097D63F66D3186D3DD98A /* rust_ffi-staticlib */ = {
+        CA6030FE1F5C2F0E6D680B1A /* rust_ffi-staticlib */ = {
             isa = PBXNativeTarget;
-            buildConfigurationList = CA60F54DF169D3186D3DD98A;
+            buildConfigurationList = CA60751BD9CD2F0E6D680B1A;
             buildPhases = (
-                CA6019C6D938D3186D3DD98A /* Sources */,
-                CA603D5D653CAF6EBB7F357C /* Universal Binary lipo */,
+                CA60B5C25A4A2F0E6D680B1A /* Sources */,
+                CA60EF239FCBAF6EBB7F357C /* Universal Binary lipo */,
             );
             buildRules = (
-                CA603D5D653CAC6C1400ACA8 /* PBXBuildRule */,
+                CA60EF239FCBAC6C1400ACA8 /* PBXBuildRule */,
             );
             dependencies = (
             );
             name = "rust_ffi-staticlib";
             productName = "librust_ffi_static.a";
-            productReference = CA6097D63F661E25D81AB079;
+            productReference = CA6030FE1F5C1E25D81AB079;
             productType = "com.apple.product-type.library.static";
         };
-        CA600EC5931C2FDA1BD5E8EA /* rust_ffi-cdylib */ = {
+        CA6032AF8ADE2D6C0B81A4BB /* rust_ffi-cdylib */ = {
             isa = PBXNativeTarget;
-            buildConfigurationList = CA60F54DF1692FDA1BD5E8EA;
+            buildConfigurationList = CA60751BD9CD2D6C0B81A4BB;
             buildPhases = (
-                CA6019C6D9382FDA1BD5E8EA /* Sources */,
-                CA603D5D653CAF6EBB7F357C /* Universal Binary lipo */,
+                CA60B5C25A4A2D6C0B81A4BB /* Sources */,
+                CA60EF239FCBAF6EBB7F357C /* Universal Binary lipo */,
             );
             buildRules = (
-                CA603D5D653CAC6C1400ACA8 /* PBXBuildRule */,
+                CA60EF239FCBAC6C1400ACA8 /* PBXBuildRule */,
             );
             dependencies = (
             );
             name = "rust_ffi-cdylib";
             productName = "rust_ffi.dylib";
-            productReference = CA600EC5931CF72F60515920;
+            productReference = CA6032AF8ADEF72F60515920;
             productType = "com.apple.product-type.library.dynamic";
         };
         
 /* End PBXNativeTarget section */
 
-        CA6019C6D938D3186D3DD98A = {
+        CA60B5C25A4A2F0E6D680B1A = {
                     isa = PBXSourcesBuildPhase;
                     buildActionMask = 2147483647;
                     files = (
-                        CA60D879F126D3186D3DD98A
+                        CA60F3006BE42F0E6D680B1A
                     );
                     runOnlyForDeploymentPostprocessing = 0;
                 };
                 
-        CA60F54DF169D3186D3DD98A /* staticlib */ = {
+        CA60751BD9CD2F0E6D680B1A /* staticlib */ = {
             isa = XCConfigurationList;
             buildConfigurations = (
-                CA60741985B0D3186D3DD98A /* Release */,
-                CA600D20EF40D3186D3DD98A /* Debug */,
+                CA60DBC574C22F0E6D680B1A /* Release */,
+                CA6042A70D082F0E6D680B1A /* Debug */,
             );
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Release;
         };
-            CA60741985B0D3186D3DD98A /* staticlib */ = {
+            CA60DBC574C22F0E6D680B1A /* staticlib */ = {
                 isa = XCBuildConfiguration;
                 buildSettings = {
                     PRODUCT_NAME = "rust_ffi_static";
@@ -191,7 +191,7 @@ CA603D5D653C98AF0B5890DB,
                 };
                 name = Release;
             };
-            CA600D20EF40D3186D3DD98A /* staticlib */ = {
+            CA6042A70D082F0E6D680B1A /* staticlib */ = {
                 isa = XCBuildConfiguration;
                 buildSettings = {
                     PRODUCT_NAME = "rust_ffi_static";
@@ -205,25 +205,25 @@ CA603D5D653C98AF0B5890DB,
                     
                 };
                 name = Debug;
-            };CA6019C6D9382FDA1BD5E8EA = {
+            };CA60B5C25A4A2D6C0B81A4BB = {
                     isa = PBXSourcesBuildPhase;
                     buildActionMask = 2147483647;
                     files = (
-                        CA60D879F1262FDA1BD5E8EA
+                        CA60F3006BE42D6C0B81A4BB
                     );
                     runOnlyForDeploymentPostprocessing = 0;
                 };
                 
-        CA60F54DF1692FDA1BD5E8EA /* cdylib */ = {
+        CA60751BD9CD2D6C0B81A4BB /* cdylib */ = {
             isa = XCConfigurationList;
             buildConfigurations = (
-                CA60741985B02FDA1BD5E8EA /* Release */,
-                CA600D20EF402FDA1BD5E8EA /* Debug */,
+                CA60DBC574C22D6C0B81A4BB /* Release */,
+                CA6042A70D082D6C0B81A4BB /* Debug */,
             );
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Release;
         };
-            CA60741985B02FDA1BD5E8EA /* cdylib */ = {
+            CA60DBC574C22D6C0B81A4BB /* cdylib */ = {
                 isa = XCBuildConfiguration;
                 buildSettings = {
                     PRODUCT_NAME = "rust_ffi";
@@ -235,7 +235,7 @@ CA603D5D653C98AF0B5890DB,
                 };
                 name = Release;
             };
-            CA600D20EF402FDA1BD5E8EA /* cdylib */ = {
+            CA6042A70D082D6C0B81A4BB /* cdylib */ = {
                 isa = XCBuildConfiguration;
                 buildSettings = {
                     PRODUCT_NAME = "rust_ffi";
@@ -248,7 +248,7 @@ CA603D5D653C98AF0B5890DB,
                 name = Debug;
             };
 
-        CA603D5D653CAF6EBB7F357C /* LipoScript */ = {
+        CA60EF239FCBAF6EBB7F357C /* LipoScript */ = {
             name = "Universal Binary lipo";
             isa = PBXShellScriptBuildPhase;
             buildActionMask = 2147483647;
@@ -266,17 +266,17 @@ CA603D5D653C98AF0B5890DB,
             shellScript = "# generated with cargo-xcode 1.5.0\n\n            set -eux; cat \"$DERIVED_FILE_DIR/$ARCHS-$EXECUTABLE_NAME.xcfilelist\" | tr \'\\n\' \'\\0\' | xargs -0 lipo -create -output \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\"\n            if [ ${LD_DYLIB_INSTALL_NAME:+1} ]; then\n                install_name_tool -id \"$LD_DYLIB_INSTALL_NAME\" \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\"\n            fi\n        ";
         };
 
-        CA603D5D653C80E02D6C7F57 = {
+        CA60EF239FCB80E02D6C7F57 = {
             isa = XCConfigurationList;
             buildConfigurations = (
-                CA6052CBDD8C3CC16B37690B /* Release */,
-                CA6052CBDD8C228BE02872F8 /* Debug */,
+                CA60D29DF5283CC16B37690B /* Release */,
+                CA60D29DF528228BE02872F8 /* Debug */,
             );
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Release;
         };
 
-        CA6052CBDD8C3CC16B37690B = {
+        CA60D29DF5283CC16B37690B = {
             isa = XCBuildConfiguration;
             buildSettings = {
                 
@@ -303,7 +303,7 @@ CA603D5D653C98AF0B5890DB,
             name = Release;
         };
 
-        CA6052CBDD8C228BE02872F8 = {
+        CA60D29DF528228BE02872F8 = {
             isa = XCBuildConfiguration;
             buildSettings = {
                 
@@ -331,22 +331,22 @@ CA603D5D653C98AF0B5890DB,
             name = Debug;
         };
 
-        CA603D5D653CE04653AD465F = {
+        CA60EF239FCBE04653AD465F = {
             isa = PBXProject;
             attributes = {
                 LastUpgradeCheck = 1300;
                 TargetAttributes = {
-                    CA6097D63F66D3186D3DD98A = {
+                    CA6030FE1F5C2F0E6D680B1A = {
                         CreatedOnToolsVersion = 9.2;
                         ProvisioningStyle = Automatic;
                     };
-                    CA600EC5931C2FDA1BD5E8EA = {
+                    CA6032AF8ADE2D6C0B81A4BB = {
                         CreatedOnToolsVersion = 9.2;
                         ProvisioningStyle = Automatic;
                     };
                                     };
             };
-            buildConfigurationList = CA603D5D653C80E02D6C7F57;
+            buildConfigurationList = CA60EF239FCB80E02D6C7F57;
             compatibilityVersion = "Xcode 11.4";
              developmentRegion = en;
             hasScannedForEncodings = 0;
@@ -354,18 +354,18 @@ CA603D5D653C98AF0B5890DB,
                     en,
                     Base,
             );
-            mainGroup = CA603D5D653CD65BC3C892A8;
-            productRefGroup = CA603D5D653C22869D176AE5 /* Products */;
+            mainGroup = CA60EF239FCBD65BC3C892A8;
+            productRefGroup = CA60EF239FCB22869D176AE5 /* Products */;
             projectDirPath = "";
             projectRoot = "";
             targets = (
-                CA6097D63F66D3186D3DD98A,
-CA600EC5931C2FDA1BD5E8EA,
+                CA6030FE1F5C2F0E6D680B1A,
+CA6032AF8ADE2D6C0B81A4BB,
 
             );
         };
 
     };
-    rootObject = CA603D5D653CE04653AD465F;
+    rootObject = CA60EF239FCBE04653AD465F;
 }
     
