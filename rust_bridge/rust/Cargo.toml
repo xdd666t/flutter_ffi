@@ -8,7 +8,7 @@ name = "rust_ffi"
 crate-type = ["staticlib", "cdylib"]
 
 [build-dependencies]
-flutter_rust_bridge_codegen = "1.50.0"
+flutter_rust_bridge_codegen = "1.54.0"
 
 [dependencies]
-flutter_rust_bridge = "1.50.0"
+flutter_rust_bridge = "1.54.0"
