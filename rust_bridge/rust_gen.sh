@@ -3,3 +3,4 @@ flutter_rust_bridge_codegen -r rust/src/api.rs -d lib/ffi/rust_ffi/rust_ffi.dart
 
 # 执行该命令: bash rust_gen.sh
 
+

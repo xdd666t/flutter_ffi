@@ -280,12 +280,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "dart-sys"
-version = "2.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "42fe64308f2072bb94ecd8f7557f9ac01b69d86e6199bac24be0f091ad74b092"
-
-[[package]]
 name = "either"
 version = "1.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -339,23 +333,19 @@ dependencies = [
 
 [[package]]
 name = "flutter_rust_bridge"
-version = "1.54.0"
+version = "1.51.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5df8e5ef5f0e51bc20a0f4f4dc9b84f08256f9fec19098fd66ef098cc77c30b3"
+checksum = "a46a779310d708f39fdac03654a501fe03c83f058c3ff23bb2ec819e0a519ac6"
 dependencies = [
  "allo-isolate",
  "anyhow",
  "build-target",
  "bytemuck",
- "cc",
  "chrono",
  "console_error_panic_hook",
- "dart-sys",
  "flutter_rust_bridge_macros",
  "js-sys",
  "lazy_static",
- "libc",
- "log",
  "parking_lot",
  "threadpool",
  "wasm-bindgen",
@@ -364,9 +354,9 @@ dependencies = [
 
 [[package]]
 name = "flutter_rust_bridge_codegen"
-version = "1.54.0"
+version = "1.51.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c46fb09a35c5b4b505d1bb5941f29e03ea3c0cacd4de0c9dec21a84ba3cb95b6"
+checksum = "1ae2e290a6d29046850d16c8426f83c8c494344a8408f9d6fa3f3b12b2dec6b1"
 dependencies = [
  "anyhow",
  "cargo_metadata",
@@ -392,9 +382,9 @@ dependencies = [
 
 [[package]]
 name = "flutter_rust_bridge_macros"
-version = "1.50.0"
+version = "1.51.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9b9e2e478503d9cc37850a668a084dad20589e2c7301dd236808ef20a2a72966"
+checksum = "9d5cf10e79fa8ed48e5ab53db032f5c0afefb24dd4081acd000ad6f9c5c7ae6b"
 
 [[package]]
 name = "hashbrown"
@@ -695,6 +685,7 @@ version = "0.1.0"
 dependencies = [
  "flutter_rust_bridge",
  "flutter_rust_bridge_codegen",
+ "flutter_rust_bridge_macros",
 ]
 
 [[package]]
