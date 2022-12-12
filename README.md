@@ -1,6 +1,6 @@
 # flutter_ffi
 
-- 该库配置说明：https://juejin.cn/post/7176077601746714681/
+- 该库配置说明：https://juejin.cn/post/7176077601746714681
 
 - 安装 rust：https://www.rust-lang.org/zh-CN/tools/install
 
